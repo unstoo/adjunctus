@@ -1,0 +1,72 @@
+.navbarHighliter {
+    width: 210px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.navbarHighliter__itemsBox {
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 2px dotted #ccc; */
+    z-index: 1;
+}
+
+.navbarHighliter__item {
+    width: 90px;
+    padding: 5px;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+.navbarHighliter__item:hover {
+}
+
+.navbarHighliter__item--selected {
+}
+
+.navbarHighliter__frameBox {
+    position: absolute;
+    width: 100%;
+}
+
+.navbarHighliter__highlightFrame {
+    width: 90px;
+    padding: 5px;
+    z-index: 0;
+    transition: margin 600ms, top 900ms;
+    position: relative;
+}
+
+
+.navbarHighliter__highlightFrame--0 {
+    margin: 0 120px 0 0;
+}
+
+.navbarHighliter__highlightFrame--0::after {
+    content: '';
+    display: block;
+    background: #efefef;
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+}
+
+.navbarHighliter__highlightFrame--1 {
+    margin: 0 0 0 120px;
+}
+
+.navbarHighliter__highlightFrame--1::after {
+    content: '';
+    display: block;
+    background: #efefef;
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

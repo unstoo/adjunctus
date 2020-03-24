@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    width: 100%; */
+}
+
+body * {
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+div, span, button, input {
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+#__next {
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mobileLayout {
+    width: 75mm;
+    height: 150mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    margin: auto auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 48px;
+    
+}
+
+header * {
+    font-size: 24px;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    margin-bottom: 16px;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url('/fonts/Gilroy-Light.woff');
+    font-weight: 200;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('/fonts/Gilroy-SemiBold.woff');
+    font-weight: 600;
+}
